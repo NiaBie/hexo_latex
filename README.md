@@ -36,17 +36,20 @@ MathJax.Hub.Config({
 <!-- To automatically render math in text elements, include the auto-render extension: -->
 <script defer src="https://cdn.jsdelivr.net/gh/hexo-simple-theme/hexo_latex@1.0.0/katex/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
 
-
-
 <script>
-document.addEventListener("DOMContentLoaded", function() {
+$(document).ready(function () { // jqueryj
   renderMathInElement(document.body, {
     // ...options...
     delimiters: [
       { left: "$$", right: "$$", display: true },
-      { left: "$", right: "$", display: false }
+      { left: "$", right: "$", display: false },
+      { left: "\\[", right: "\\]", display: true }
     ]
   });
 });
 </script>
 ```
+
+### bug
+
+md中不能有换行,会被替换成`<br>`,katex无法渲染
