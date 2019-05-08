@@ -24,6 +24,8 @@ MathJax.Hub.Config({
 </script>
 ```
 
+### bug
+
 ## Katex
 
 ```html
