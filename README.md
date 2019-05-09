@@ -2,7 +2,10 @@
 
 ```html
 <!DOCTYPE html>
+<!--
 <script type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+-->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/hexo-simple-theme/hexo_latex@1.0.4/mathjax/MathJax.js?config=TeX-AMS_HTML-full"></script>
 
 <script type="text/javascript">
   $(document).ready(function()
